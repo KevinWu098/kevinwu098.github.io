@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/KevinWu098/portfolio-website.git/static/css/main.5219484e.css",
+    "main.js": "/KevinWu098/portfolio-website.git/static/js/main.7c1449f4.js",
+    "static/js/787.28cb0dcd.chunk.js": "/KevinWu098/portfolio-website.git/static/js/787.28cb0dcd.chunk.js",
+    "static/media/hamlegs.jpg": "/KevinWu098/portfolio-website.git/static/media/hamlegs.1e7a641035908bbc36b8.jpg",
+    "index.html": "/KevinWu098/portfolio-website.git/index.html",
+    "main.5219484e.css.map": "/KevinWu098/portfolio-website.git/static/css/main.5219484e.css.map",
+    "main.7c1449f4.js.map": "/KevinWu098/portfolio-website.git/static/js/main.7c1449f4.js.map",
+    "787.28cb0dcd.chunk.js.map": "/KevinWu098/portfolio-website.git/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5219484e.css",
+    "static/js/main.7c1449f4.js"
+  ]
+}
