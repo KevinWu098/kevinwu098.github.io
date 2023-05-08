@@ -1,0 +1,182 @@
+.home {
+    color: white;
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0px 10%;
+
+    overflow: auto;
+
+}
+
+.home-content{
+    background: transparent;
+    max-width: 35vw;
+}
+
+.home-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.home-content h3{
+    font-size: 28px;
+    font-weight: 700;
+    color: aqua;
+
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: 0em; /* Adjust as needed */
+    animation: 
+    typing 2s steps(40, end),
+    blink-caret 2s step-end infinite;
+    display: inline-block;
+    align-items: left;  
+}
+    /* The typing effect */
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+
+    /* The typewriter cursor effect */
+    @keyframes blink-caret {
+        from, to { border-color: rgb(64,64,64)}
+    }
+
+.home-content p{
+    font-size: 16px;
+    margin: 14px 0px 30px;
+  }
+
+.home-content .button-box{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+    height: 50px;
+    background-color: transparent;
+}
+
+.button-box a{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 45%;
+    height: 100%;
+
+    background-color: aqua;
+    border: 2px solid aqua;
+    border-radius: 8px;
+    border-width: 3px;
+    
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 20px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.button-box a:nth-child(1){
+    color: black;
+}
+
+.button-box a:nth-child(1):hover{
+    color: white;
+}
+
+.button-box a:nth-child(2){
+    background-color: transparent;
+    color: white;
+}
+
+.button-box a:nth-child(2):hover{
+    color: black;
+}
+
+.button-box a:nth-child(2)::before{
+    background-color: aqua;
+}
+
+.button-box a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(64, 64, 64);
+    z-index: -1;
+    transition: .5s;
+}
+
+.button-box a:hover::before{
+    width: 100%;
+}
+
+.home-links{
+    position: absolute;
+    bottom: 40px;
+    width: 120px;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-links a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid aqua;
+    background-color: transparent;
+    border-radius: 50px;
+    font-size: 20px;
+    color: aqua;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.home-links a:hover{
+    color: rgb(64, 64, 64);
+    background-color: aqua;
+}
+
+.home-image-floating{
+    position: absolute;
+    top: 10vw;
+    right: 15vw;
+    height: 350px;
+    /* border: 2px solid red; */
+
+    overflow: hidden;
+
+    border-top-left-radius: 55% 45%;
+    border-top-right-radius: 20% 40%;
+    border-bottom-right-radius: 65% 32%;
+    border-bottom-left-radius: 15% 20%;
+}
+
+#ham-image{
+    position: relative;
+    min-width: 400px;
+    top: -10%;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating{
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 30px); }
+    100%   { transform: translate(0, -0px); }   
+}
