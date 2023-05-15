@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.74d80b68.css",
-    "main.js": "/static/js/main.3d0c3c4f.js",
+    "main.css": "/static/css/main.804cd89d.css",
+    "main.js": "/static/js/main.be6f6737.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/original-webp": "/static/media/original-a745ca9c375af41fc177c9d22e55fd1c.52f9a712cc77e0b3383c.webp",
     "static/media/webp": "/static/media/0a3f06a8253ec24c5102a0acb8462d4b.79f0c49a7b1602c80fbd.webp",
@@ -10,12 +10,12 @@
     "static/media/meat-on-bone_1f356.png": "/static/media/meat-on-bone_1f356.e24dc5d22d5dc3a92c86.png",
     "static/media/man-technologist_1f468-200d-1f4bb.png": "/static/media/man-technologist_1f468-200d-1f4bb.9ec1d7ffa05d00180eed.png",
     "index.html": "/index.html",
-    "main.74d80b68.css.map": "/static/css/main.74d80b68.css.map",
-    "main.3d0c3c4f.js.map": "/static/js/main.3d0c3c4f.js.map",
+    "main.804cd89d.css.map": "/static/css/main.804cd89d.css.map",
+    "main.be6f6737.js.map": "/static/js/main.be6f6737.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.74d80b68.css",
-    "static/js/main.3d0c3c4f.js"
+    "static/css/main.804cd89d.css",
+    "static/js/main.be6f6737.js"
   ]
 }
