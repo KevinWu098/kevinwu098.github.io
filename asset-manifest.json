@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.c8480740.css",
-    "main.js": "/static/js/main.e45a1ea0.js",
+    "main.css": "/static/css/main.53394a65.css",
+    "main.js": "/static/js/main.7f0eea11.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/original-webp": "/static/media/original-a745ca9c375af41fc177c9d22e55fd1c.52f9a712cc77e0b3383c.webp",
-    "static/media/webp": "/static/media/0a3f06a8253ec24c5102a0acb8462d4b.79f0c49a7b1602c80fbd.webp",
+    "static/media/LevelUp.png": "/static/media/LevelUp.f9b0f0b43adc6ee6ffe7.png",
+    "static/media/antalmanac.png": "/static/media/antalmanac.7e6409559863e9e60f94.png",
+    "static/media/IntelliStyle.jpg": "/static/media/IntelliStyle.3bc64f3cb834e8af3d77.jpg",
     "static/media/interior-office-workspace-computer.jpg": "/static/media/interior-office-workspace-computer.49d69caca4a294432cc0.jpg",
     "static/media/hamlegs.jpg": "/static/media/hamlegs.1e7a641035908bbc36b8.jpg",
     "static/media/meat-on-bone_1f356.png": "/static/media/meat-on-bone_1f356.e24dc5d22d5dc3a92c86.png",
     "static/media/man-technologist_1f468-200d-1f4bb.png": "/static/media/man-technologist_1f468-200d-1f4bb.9ec1d7ffa05d00180eed.png",
     "index.html": "/index.html",
-    "main.c8480740.css.map": "/static/css/main.c8480740.css.map",
-    "main.e45a1ea0.js.map": "/static/js/main.e45a1ea0.js.map",
+    "main.53394a65.css.map": "/static/css/main.53394a65.css.map",
+    "main.7f0eea11.js.map": "/static/js/main.7f0eea11.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8480740.css",
-    "static/js/main.e45a1ea0.js"
+    "static/css/main.53394a65.css",
+    "static/js/main.7f0eea11.js"
   ]
 }
