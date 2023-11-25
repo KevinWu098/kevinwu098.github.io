@@ -1,11 +1,15 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
+
 import "./globals.css";
 import Header from "@/components/header/header";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
 
 export const metadata = {
-  title: "Personal Website — Kevin Wu",
+  title: "Kevin Wu — Personal Website",
   description:
     "My personal site, created with Next, React, Tailwind, Framer Motion, and more!",
 };
@@ -13,8 +17,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Header />
+      <body className={`${poppins.className} bg-background`}>
+        {/* <Header /> */}
         {children}
       </body>
     </html>

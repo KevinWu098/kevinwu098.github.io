@@ -1,9 +1,8 @@
 import Hero from "@/components/hero/hero";
-import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="flex h-[100vh]">
       <Hero />
     </main>
   );
