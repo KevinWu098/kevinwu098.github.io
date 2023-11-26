@@ -13,10 +13,10 @@ import {
 
 const TechStack = () => {
   return (
-    <div className="flex flex-row items-center gap-2">
+    <div className="mx-auto flex flex-row items-center gap-2 xl:mx-0">
       <div className="text-xl">Tech Stack</div>
       <div className="text-primary text-5xl font-extralight">|</div>
-      <div className="flex flex-row text-5xl">
+      <div className="grid grid-cols-4 flex-row text-5xl lg:flex">
         <BiLogoTypescript /> <BiLogoJavascript />
         <BiLogoHtml5 /> <BiLogoCss3 /> <BiLogoReact /> <BiLogoNodejs />
         <BiLogoPython />
@@ -28,10 +28,10 @@ const TechStack = () => {
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-row items-center justify-between px-48">
-        <div className="flex w-[75%] flex-col place-content-center gap-8">
+      <div className="flex flex-col-reverse items-center gap-8 px-8 lg:px-24 xl:flex-row xl:justify-between xl:gap-0 xl:px-48">
+        <div className="flex flex-col place-content-center justify-center gap-8 text-center xl:w-[85%] xl:text-left">
           <div className="flex flex-col gap-2">
-            <div className="text-6xl font-semibold">
+            <div className="text-5xl font-semibold xl:text-6xl">
               Hello! {"I'm"} Kevin Wu
             </div>
             <div className="text-primary text-4xl font-semibold">
@@ -39,15 +39,15 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="w-[70%] text-lg">
+          <div className="mx-auto text-lg md:w-[90%] lg:w-[80%] xl:mx-0 xl:w-[70%]">
             {"I'm"} a frontend developer with a passion for building innovative
             applications that blend functionality and an engaging user
             experience.
           </div>
 
-          <TechStack />
+          {/* <TechStack /> */}
 
-          <div className="flex flex-col gap-4">
+          <div className="mx-auto flex flex-col gap-4 align-middle md:flex-row xl:mx-0 xl:flex-col">
             <a
               href="https://drive.google.com/file/d/1_XeDSf7CWSSfsnLTxtOxRxfiNOtHbbXJ/view?usp=sharing"
               target="_blank"
@@ -57,7 +57,8 @@ const Hero = () => {
             >
               <div>My Resume</div>
             </a>
-            <div className="text-primary flex flex-row gap-2 text-2xl transition-colors">
+
+            <div className="text-primary mx-auto flex flex-row gap-2 text-2xl transition-colors md:mx-0">
               <a
                 href="https://www.linkedin.com/in/kevinwu098/"
                 target="_blank"
@@ -87,13 +88,13 @@ const Hero = () => {
           <img
             src="/man-technologist.png"
             alt="Man Technologist"
-            className="flex w-[28rem] rounded-full"
+            className="flex w-72 rounded-full xl:w-[24rem]"
             style={{ boxShadow: "0 0.25vw 0.75vw 0 #1d6432" }}
           />
         </div>
       </div>
 
-      <div className="text-accent absolute bottom-3 left-[50%] translate-x-[-50%] text-base">
+      <div className="text-accent absolute bottom-2 left-[50%] hidden w-fit translate-x-[-50%] text-center text-base md:flex">
         Page is currently undergoing reconstruction! ⚙️
       </div>
     </>
