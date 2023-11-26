@@ -8,9 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d out"
   },
-  "homepage": "https://k3v.in",
+  "homepage": "https://kevinwu098.github.io",
   "dependencies": {
     "framer-motion": "^10.16.5",
     "next": "14.0.3",
