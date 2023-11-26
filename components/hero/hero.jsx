@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { createContext } from "react";
 import {
   BiLogoTypescript,
   BiLogoJavascript,
@@ -10,6 +12,7 @@ import {
   BiLogoLinkedin,
   BiLogoGithub,
 } from "react-icons/bi";
+import { motion } from "framer-motion";
 
 const TechStack = () => {
   return (
@@ -28,26 +31,46 @@ const TechStack = () => {
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col-reverse items-center gap-8 px-8 lg:px-24 xl:flex-row xl:justify-between xl:gap-0 xl:px-48">
+      <div className="flex flex-col-reverse items-center gap-4 px-8 md:gap-8 lg:px-24 xl:flex-row xl:justify-between xl:gap-0 xl:px-48">
         <div className="flex flex-col place-content-center justify-center gap-8 text-center xl:w-[85%] xl:text-left">
           <div className="flex flex-col gap-2">
-            <div className="text-5xl font-semibold xl:text-6xl">
+            <motion.div
+              className="text-5xl font-semibold xl:text-6xl"
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 100, y: 0 }}
+              transition={{ duration: 0.75, ease: "easeOut", delay: 0.25 }}
+            >
               Hello! {"I'm"} Kevin Wu
-            </div>
-            <div className="text-primary text-4xl font-semibold">
+            </motion.div>
+            <motion.div
+              className="text-primary text-4xl font-semibold"
+              initial={{ opacity: 0, y: 25 }}
+              animate={{ opacity: 100, y: 0 }}
+              transition={{ duration: 0.75, ease: "easeOut" }}
+            >
               Developer | CS @ UC Irvine
-            </div>
+            </motion.div>
           </div>
 
-          <div className="mx-auto text-lg md:w-[90%] lg:w-[80%] xl:mx-0 xl:w-[70%]">
+          <motion.div
+            className="mx-auto text-lg md:w-[90%] lg:w-[80%] xl:mx-0 xl:w-[70%]"
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+          >
             {"I'm"} a frontend developer with a passion for building innovative
             applications that blend functionality and an engaging user
             experience.
-          </div>
+          </motion.div>
 
           {/* <TechStack /> */}
 
-          <div className="mx-auto flex flex-col gap-4 align-middle md:flex-row xl:mx-0 xl:flex-col">
+          <motion.div
+            className="mx-auto flex flex-col gap-4 align-middle md:flex-row xl:mx-0 xl:flex-col"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.75, ease: "easeOut" }}
+          >
             <a
               href="https://drive.google.com/file/d/1_XeDSf7CWSSfsnLTxtOxRxfiNOtHbbXJ/view?usp=sharing"
               target="_blank"
@@ -80,17 +103,23 @@ const Hero = () => {
                 </div>
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
 
         <div className="flex h-fit w-fit place-content-center items-center rounded-full">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/man-technologist.png"
-            alt="Man Technologist"
-            className="flex w-72 rounded-full xl:w-[24rem]"
-            style={{ boxShadow: "0 0.25vw 0.75vw 0 #1d6432" }}
-          />
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/man-technologist.png"
+              alt="Man Technologist"
+              className="flex w-72 rounded-full xl:w-[24rem]"
+              style={{ boxShadow: "0 0.25vw 0.75vw 0 #1d6432" }}
+            />
+          </motion.div>
         </div>
       </div>
 
