@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-    "deploy": "npm run build && gh-pages -d out"
+    "deploy": "gh-pages -d build"
   },
   "homepage": "https://kevinwu098.github.io",
   "dependencies": {
