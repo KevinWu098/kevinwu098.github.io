@@ -124,7 +124,7 @@ const Hero = () => {
       </div>
 
       <div className="text-accent absolute bottom-2 left-[50%] hidden w-fit translate-x-[-50%] text-center text-base md:flex">
-        Page is currently undergoing reconstruction! ⚙️
+        Page is currently undergoing reconstruction! 💖
       </div>
     </>
   );
