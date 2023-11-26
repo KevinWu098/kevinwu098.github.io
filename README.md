@@ -1,3 +1,3 @@
 # My Website
 
-Built with React, Next.js 13, Tailwind, Framer Motion 💖
+Built with React, Next.js 13, Tailwind, Framer Motion, deployed on Vercel 💖
